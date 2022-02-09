@@ -9,10 +9,8 @@
 // specific language governing permissions and limitations under the License.
 //
 // Author:  Florian Zaruba <zaruabf@iis.ee.ethz.ch>
-//          Andreas Kuster, <kustera@ethz.ch>
 //
 // Description: Platform level interrupt controller
-
 
 module plic_top #(
   parameter int N_SOURCE    = 30,

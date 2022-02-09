@@ -2,7 +2,7 @@
 module plic_regs #(
   parameter type reg_req_t  = logic,
   parameter type reg_rsp_t  = logic
-) (
+)(
   input logic [30:0][2:0] prio_i,
   output logic [30:0][2:0] prio_o,
   output logic [30:0] prio_we_o,
@@ -35,7 +35,6 @@ always_comb begin
   ie_o = '0;
   ie_we_o = '0;
   ie_re_o = '0;
-  ip_re_o = '0;
   threshold_o = '0;
   threshold_we_o = '0;
   threshold_re_o = '0;
@@ -355,3 +354,4 @@ always_comb begin
   end
 end
 endmodule
+
