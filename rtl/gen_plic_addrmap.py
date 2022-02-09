@@ -64,7 +64,7 @@ class AddrMap:
     params =",\n".join(map(lambda x: "  " + x, [
       "parameter type reg_req_t  = logic",
       "parameter type reg_rsp_t  = logic"]))
-    output += "module {} {}(\n".format(self.name, f'#(\n{params}\n)')
+    output += "module {} {}(\n".format(self.name, "#(\n{}\n)".format(params))
     for i in self.ports:
       # self.ports.append((name, num, width, access))
       if i[3] == Access.RO:
